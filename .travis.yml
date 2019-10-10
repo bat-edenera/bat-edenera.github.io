@@ -16,4 +16,4 @@ after_script:
   - git push --force --quiet "https://${TOKEN}@${REPO}" master:${BRANCH}
 branches:
   only:
-    - master
+    - app
