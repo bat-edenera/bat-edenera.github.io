@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+  - "node"
+
+cache: yarn
+
+script: yarn build
+
+after_script:
+  - cd ./dist
+  - git init
+  - git config user.name "${U_NAME}"
+  - git config user.email "${U_EMAIL}"
+  - git add .
+  - git commit -m "deploy"
+  - git push --force --quiet "https://${TOKEN}@${REPO}" master:${BRANCH}
+branches:
+  only:
+    - master
