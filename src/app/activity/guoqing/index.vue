@@ -1,5 +1,6 @@
 <template>
   <div>
+    <img src="~@/assets/act.jpg" alt width="100%" />
     <h3 class="tac">2019·第八届中国创新创业大赛</h3>
     <h1 class="tac">萃才计划</h1>
     <van-tabs sticky animated swipeable>
