@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img src="~@/assets/act2.png" alt width="100%" />
+    <img src="~@/assets/act2.png" alt width="100%" style="display:block" />
   </div>
 </template>
 

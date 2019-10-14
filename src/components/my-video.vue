@@ -1,6 +1,14 @@
 <template>
   <div class="tac video">
-    <video preload>
+    <video
+      preload
+      controls
+      style="object-fit:fill"
+      autoplay
+      webkit-playsinline
+      playsinline
+      x5-video-player-type="h5"
+    >
       <source :src="url" type="video/mp4" />
     </video>
     <!-- <div class="player"> -->
@@ -27,7 +35,7 @@ export default {
 .video {
   video {
     width: 100%;
-    height: 100%;
+    // height: 100%;
   }
   .player {
     position: absolute;

@@ -1,7 +1,10 @@
 <template>
   <div>
-    <img src="~@/assets/act.jpg" alt width="100%" />
-    <my-video url="/movie.mp4" class="video"></my-video>
+    <img src="~@/assets/act.jpg" alt width="100%" style="display:block" />
+    <my-video
+      url="http://vod.lucasgchr.com/video/3f4d5c3d-16dba33ca16-0004-60eb-1e1-f3459.mp4"
+      class="video"
+    ></my-video>
     <van-swipe class="swiper" :autoplay="6000" vertical :show-indicators="false">
       <van-swipe-item>
         <div class="name">柳传志</div>
