@@ -1,6 +1,6 @@
 <template>
   <div class="tac video">
-    <video preload controls>
+    <video preload>
       <source :src="url" type="video/mp4" />
     </video>
     <!-- <div class="player"> -->
@@ -25,7 +25,10 @@ export default {
 
 <style scoped lang="scss">
 .video {
-  position: relative;
+  video {
+    width: 100%;
+    height: 100%;
+  }
   .player {
     position: absolute;
     left: 0;

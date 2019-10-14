@@ -1,6 +1,6 @@
 <template>
-  <div style="padding-top:30px;">
-    <van-button type="primary" @click="toAward">点击领取</van-button>
+  <div>
+    <img src="~@/assets/act2.png" alt width="100%" />
   </div>
 </template>
 

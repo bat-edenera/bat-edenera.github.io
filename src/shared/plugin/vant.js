@@ -1,4 +1,4 @@
-import { Button, Tab, Tabs, Divider, NavBar, Swipe, SwipeItem, Step, Steps, Row, Col, Icon } from 'vant'
+import { Button, Tab, Tabs, Divider, NavBar, Swipe, SwipeItem, Step, Steps, Row, Col, Icon, Sticky } from 'vant'
 import Vue from 'vue'
 
 Vue.component(Button.name, Button)
@@ -13,4 +13,5 @@ Vue.component(SwipeItem.name, SwipeItem)
 Vue.use(Row)
   .use(Col)
   .use(Icon)
+  .use(Sticky)
 

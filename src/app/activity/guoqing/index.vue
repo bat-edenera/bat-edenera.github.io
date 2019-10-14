@@ -1,16 +1,8 @@
 <template>
   <div>
-    <img src="~@/assets/act.jpg" alt width="100%" />
-    <h3 class="tac">2019·第八届中国创新创业大赛</h3>
-    <h1 class="tac">萃才计划</h1>
-    <van-tabs sticky animated swipeable>
-      <van-tab title="大赛介绍">
-        <tab1 />
-      </van-tab>
-      <van-tab title="萃才计划">
-        <tab2 />
-      </van-tab>
-    </van-tabs>
+    <div class="tab tab1" @click="tab = Tab1"></div>
+    <div class="tab tab2" @click="tab = Tab2"></div>
+    <component :is="tab"></component>
   </div>
 </template>
 
@@ -20,7 +12,11 @@ import Tab2 from "./detail/tab2";
 export default {
   name: "GuoqingAct",
   data() {
-    return {};
+    return {
+      Tab1,
+      Tab2,
+      tab: Tab1
+    };
   },
   components: { Tab1, Tab2 },
   computed: {},
@@ -30,4 +26,15 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.tab {
+  position: absolute;
+  top: 400px;
+  width: 200px;
+  height: 100px;
+  z-index: 20;
+  left: 120px;
+  &.tab2 {
+    left: 400px;
+  }
+}
 </style>
