@@ -1,8 +1,9 @@
 <template>
   <div>
-    <div class="tab tab1" @click="tab = Tab1"></div>
-    <div class="tab tab2" @click="tab = Tab2"></div>
-    <component :is="tab"></component>
+    <div class="tab" @click="tab = 1"></div>
+    <div class="tab tab2" @click="tab = 2"></div>
+    <tab1 v-show="tab === 1" />
+    <tab2 v-show="tab === 2" />
   </div>
 </template>
 
@@ -13,9 +14,7 @@ export default {
   name: "GuoqingAct",
   data() {
     return {
-      Tab1,
-      Tab2,
-      tab: Tab1
+      tab: 1
     };
   },
   components: { Tab1, Tab2 },

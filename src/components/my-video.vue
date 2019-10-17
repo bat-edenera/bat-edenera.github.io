@@ -11,9 +11,6 @@
     >
       <source :src="url" type="video/mp4" />
     </video>
-    <!-- <div class="player"> -->
-    <!-- <van-icon name="play-circle-o" class="play" /> -->
-    <!-- </div> -->
   </div>
 </template>
 
