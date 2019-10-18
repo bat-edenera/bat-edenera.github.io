@@ -1,7 +1,19 @@
 const pxtorem = require('postcss-pxtorem');
 const autoprefixer = require('autoprefixer');
 module.exports = {
-
+  configureWebpack: config => {
+    config.externals = {
+      'vue': 'Vue',
+      'vue-router': 'VueRouter'
+    }
+  },
+  chainWebpack: config => {
+    config.plugin('html')
+      .tap(args => {
+        args[0].cdn = ['https://cdn.bootcss.com/vue/2.6.10/vue.min.js', 'https://cdn.bootcss.com/vue-router/3.0.3/vue-router.min.js'];
+        return args;
+      })
+  },
   css: {
     loaderOptions: {
       less: {
