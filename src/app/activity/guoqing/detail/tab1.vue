@@ -1,8 +1,9 @@
 <template>
   <div>
-    <img src="~@/assets/act.jpg" alt width="100%" style="display:block" />
+    <img src="~@/assets/act1.png" alt width="100%" style="display:block" />
     <my-video
       url="http://vod.lucasgchr.com/video/3f4d5c3d-16dba33ca16-0004-60eb-1e1-f3459.mp4"
+      poster="https://misc.lucasgchr.com/h5-app/app/images/activity/innovation/poster_7d637fe3.png"
       class="video"
     ></my-video>
     <van-swipe class="swiper" :autoplay="6000" vertical :show-indicators="false">

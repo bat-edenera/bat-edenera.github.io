@@ -8,6 +8,7 @@
       webkit-playsinline
       playsinline
       x5-video-player-type="h5"
+      :poster="poster"
     >
       <source :src="url" type="video/mp4" />
     </video>
@@ -20,7 +21,7 @@ export default {
   data() {
     return {};
   },
-  props: ["url"],
+  props: ["url", "poster"],
   components: {},
   computed: {},
   created() {},
