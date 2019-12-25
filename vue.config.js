@@ -1,10 +1,25 @@
 const pxtorem = require('postcss-pxtorem');
 const autoprefixer = require('autoprefixer');
+const TerserPlugin = require('terser-webpack-plugin');
 module.exports = {
   configureWebpack: config => {
     config.externals = {
       'vue': 'Vue',
       'vue-router': 'VueRouter'
+    }
+    config.optimization = {
+      minimizer: [
+        new TerserPlugin({
+          cache: true,
+          parallel: true,
+          sourceMap: true,
+          terserOptions: {
+            compress: {
+              reduce_vars: false
+            }
+          }
+        })
+      ]
     }
   },
   chainWebpack: config => {

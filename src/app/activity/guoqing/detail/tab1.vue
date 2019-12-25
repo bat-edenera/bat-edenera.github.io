@@ -6,7 +6,12 @@
       poster="https://misc.lucasgchr.com/h5-app/app/images/activity/innovation/poster_7d637fe3.png"
       class="video"
     ></my-video>
-    <van-swipe class="swiper" :autoplay="6000" vertical :show-indicators="false">
+    <van-swipe
+      class="swiper"
+      :autoplay="6000"
+      vertical
+      :show-indicators="false"
+    >
       <van-swipe-item>
         <div class="name">柳传志</div>
         <div class="detail">联想集团有限公司董事局名誉主席</div>
